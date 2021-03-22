@@ -1,7 +1,6 @@
 import chunks from './chunks'
 
-const chunkTestName = (n: number): string =>
-  `Return the length of ${n} chunk(s) in meters.`
+const chunkTestName = (n: number): string => `length of ${n} chunk(s) in meters`
 
 test(chunkTestName(-1), () => {
   expect(chunks(-1)).toBe(-16)
