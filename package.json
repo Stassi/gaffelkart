@@ -1,5 +1,6 @@
 {
   "name": "gaffelkart",
+  "private": true,
   "version": "0.0.1",
   "description": "",
   "repository": "github:Stassi/gaffelkart",
