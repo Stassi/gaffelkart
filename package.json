@@ -5,6 +5,7 @@
   "repository": "github:Stassi/gaffelkart",
   "author": "Andreas Stassivik <andreas@stassi.net> (https://github.com/Stassi)",
   "license": "MIT",
+  "type": "module",
   "scripts": {
     "format:check": "prettier --check .",
     "format:write": "prettier --write .",
