@@ -1,4 +1,6 @@
-import mapZero from './mapZero'
+import kart from './kart'
+
+const mapZero = kart(0)
 
 const mapZeroTestName = (x: number): string =>
   `Return the position at ${x} 0-zoom map-lengths in meters.`

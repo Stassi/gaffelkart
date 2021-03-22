@@ -1,4 +1,6 @@
-import mapOne from './mapOne'
+import kart from './kart'
+
+const mapOne = kart(1)
 
 const mapOneTestName = (x: number): string =>
   `Return the position at ${x} 1-zoom map-lengths in meters.`
