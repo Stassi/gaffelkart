@@ -1,3 +1,3 @@
-export default function mapOne(n: number): number {
-  return 256 * (n - 0.5)
+export default function mapOne(x: number): number {
+  return 256 * (x - 0.5)
 }

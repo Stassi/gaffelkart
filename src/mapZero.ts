@@ -1,3 +1,3 @@
-export default function mapZero(n: number): number {
-  return 128 * (n - 0.5)
+export default function mapZero(x: number): number {
+  return 128 * (x - 0.5)
 }
