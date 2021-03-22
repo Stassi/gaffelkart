@@ -17,6 +17,10 @@ describe.each([
     expect(position(0)).toBe(expected[0])
   })
 
+  test('position at 0.5', () => {
+    expect(position(0.5)).toBe(expected[0.5])
+  })
+
   test('position at 1', () => {
     expect(position(1)).toBe(expected[1])
   })
