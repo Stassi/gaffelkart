@@ -2,14 +2,14 @@
   "name": "gaffelkart",
   "version": "0.0.1",
   "description": "",
+  "repository": "github:Stassi/gaffelkart",
+  "author": "Andreas Stassivik <andreas@stassi.net> (https://github.com/Stassi)",
+  "license": "MIT",
   "scripts": {
     "format:check": "prettier --check .",
     "format:write": "prettier --write .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": "github:Stassi/gaffelkart",
-  "author": "Andreas Stassivik <andreas@stassi.net> (https://github.com/Stassi)",
-  "license": "MIT",
   "devDependencies": {
     "prettier": "2.2.1",
     "typescript": "^4.2.3"
