@@ -1,4 +1,4 @@
-import kartPosition from './kartPosition'
+import kartBoundary from './kartBoundary'
 
 describe.each([
   [0, { '-1': -192, 0: -64, 0.5: 0, 1: 64, 2: 192 }],
@@ -7,7 +7,7 @@ describe.each([
   [3, { '-1': -1536, 0: -512, 0.5: 0, 1: 512, 2: 1536 }],
   [4, { '-1': -3072, 0: -1024, 0.5: 0, 1: 1024, 2: 3072 }],
 ])('zoom: %i', (zoom, expected) => {
-  const position = kartPosition(zoom)
+  const position = kartBoundary(zoom)
 
   test('position at -1', () => {
     expect(position(-1)).toBe(expected[-1])
