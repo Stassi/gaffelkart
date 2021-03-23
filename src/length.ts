@@ -1,4 +1,4 @@
-export default function kartLengths({
+export default function length({
   boundary = false,
   zoom,
 }: {

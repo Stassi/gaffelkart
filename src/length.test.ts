@@ -1,7 +1,7 @@
-import kartLengths from './kartLengths'
+import length from './length'
 
 describe('chunk lengths', () => {
-  const chunks = kartLengths({ zoom: -3 })
+  const chunks = length({ zoom: -3 })
 
   const chunkTestName = (n: number): string =>
     `length of ${n} chunk(s) in meters`
@@ -41,7 +41,7 @@ describe('map lengths', () => {
 
   const expectedLength = { 0: 128, 1: 256, 2: 512, 3: 1024, 4: 2048 }
 
-  const lengthOne = (zoom: number): number => kartLengths({ zoom })(1)
+  const lengthOne = (zoom: number): number => length({ zoom })(1)
 
   test(kartLengthTestName(0), () => {
     expect(lengthOne(0)).toBe(expectedLength[0])
@@ -71,7 +71,7 @@ describe.each([
   [3, { '-1': -1536, 0: -512, 0.5: 0, 1: 512, 2: 1536 }],
   [4, { '-1': -3072, 0: -1024, 0.5: 0, 1: 1024, 2: 3072 }],
 ])('zoom-%i boundary', (zoom, expected) => {
-  const position = kartLengths({ zoom, boundary: true })
+  const position = length({ zoom, boundary: true })
 
   test('position at -1', () => {
     expect(position(-1)).toBe(expected[-1])
