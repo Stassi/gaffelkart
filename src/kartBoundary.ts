@@ -1,5 +1,5 @@
-import kartLength from './kartLength'
+import kartLengths from './kartLengths'
 
-export default function kartBoundary(zoom: number): (x: number) => number {
-  return (x: number): number => kartLength(zoom) * (x - 0.5)
+export default function kartBoundary(zoom: number): (n: number) => number {
+  return (n: number): number => kartLengths(zoom)(n - 0.5)
 }
